@@ -4,7 +4,8 @@
     "description": "Backend for Note Taking Extension",
     "main": "server.js",
     "scripts": {
-        "start": "node server.js"
+        "start": "node server.js",
+        "build": "babel src -d dist"
     },
     "dependencies": {
         "body-parser": "^1.19.0",
@@ -12,5 +13,10 @@
         "dotenv": "^8.2.0",
         "express": "^4.17.1",
         "mongoose": "^5.10.11"
+    },
+    "devDependencies": {
+        "@babel/cli": "^7.13.0",
+        "@babel/core": "^7.13.0",
+        "@babel/preset-env": "^7.13.0"
     }
 }
